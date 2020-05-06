@@ -295,7 +295,7 @@ if __name__ == '__main__':
 	###########################
 	# GET ALL DEVICES FROM LM #
 	###########################
-	queryParams = {"fields": "id,name,displayName,hostGroupIds,customProperties,systemProperties,autoProperties,inheritedProperties"}
+	queryParams = {} # {"fields": "id,name,displayName,hostGroupIds,customProperties,systemProperties,autoProperties,inheritedProperties"}
 	log_msg(f"Fetching current device list from LM...", end="")
 	raw_response = LM_GET(_resource_path = '/device/devices', _query_params = queryParams, **lm_creds)
 	if raw_response['code'] in (200, 201):
@@ -308,6 +308,8 @@ if __name__ == '__main__':
 			all_properties = {}
 			#
 			# FIX: * Does not handle possiblity of duplicate names in sub-objects
+			# FIX:   Therefore, it should probably verify the order these are
+			# FIX:   expanded.  Custom properties should probably be last
 			for dict in item['systemProperties']:
 				all_properties[dict['name']] = dict['value'] #could probably use list comprehension here
 			for dict in item['autoProperties']:
@@ -323,8 +325,8 @@ if __name__ == '__main__':
 			# for k,v in all_properties.items(): log_msg(f"  {k}: {v}", "DEBUG")
 
 			# FIX: * Device dictionary is keyed on displayName alone.  Does not handle
-			# FIX: the possibility of multiple companies having devices with the ame
-			# FIX: name.
+			# FIX:   the possibility of multiple companies having devices with the ame
+			# FIX:   name.
 			device_name = item['displayName']
 			log_msg(f"Gathering information for {device_name}...", "DEBUG")
 			device_array[device_name] = {}

@@ -1,0 +1,159 @@
+[
+  {
+    "id": 0,
+    "name": "string",
+    "type": {
+      "id": 0,
+      "name": "string",
+      "_info": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      }
+    },
+    "status": {
+      "id": 0,
+      "name": "string",
+      "_info": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      }
+    },
+    "company": {
+      "id": 0,
+      "identifier": "string",
+      "name": "string",
+      "_info": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      }
+    },
+    "contact": {
+      "id": 0,
+      "name": "string",
+      "_info": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      }
+    },
+    "site": {
+      "id": 0,
+      "name": "string",
+      "_info": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      }
+    },
+    "locationId": 0,
+    "businessUnitId": 0,
+    "deviceIdentifier": "string",
+    "serialNumber": "string",
+    "modelNumber": "string",
+    "tagNumber": "string",
+    "purchaseDate": "string",
+    "installationDate": "string",
+    "installedBy": {
+      "id": 0,
+      "identifier": "string",
+      "name": "string",
+      "_info": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      }
+    },
+    "warrantyExpirationDate": "string",
+    "vendorNotes": "string",
+    "notes": "string",
+    "macAddress": "string",
+    "lastLoginName": "string",
+    "billFlag": true,
+    "backupSuccesses": 0,
+    "backupIncomplete": 0,
+    "backupFailed": 0,
+    "backupRestores": 0,
+    "lastBackupDate": "string",
+    "backupServerName": "string",
+    "backupBillableSpaceGb": 0,
+    "backupProtectedDeviceList": "string",
+    "backupYear": 0,
+    "backupMonth": 0,
+    "ipAddress": "string",
+    "defaultGateway": "string",
+    "osType": "string",
+    "osInfo": "string",
+    "cpuSpeed": "string",
+    "ram": "string",
+    "localHardDrives": "string",
+    "parentConfigurationId": 0,
+    "vendor": {
+      "id": 0,
+      "identifier": "string",
+      "name": "string",
+      "_info": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      }
+    },
+    "manufacturer": {
+      "id": 0,
+      "name": "string",
+      "_info": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      }
+    },
+    "questions": [
+      {
+        "answerId": 0,
+        "questionId": 0,
+        "question": "string",
+        "answer": {},
+        "sequenceNumber": 0,
+        "numberOfDecimals": 0,
+        "fieldType": "TextArea",
+        "requiredFlag": true
+      }
+    ],
+    "activeFlag": true,
+    "managementLink": "string",
+    "remoteLink": "string",
+    "sla": {
+      "id": 0,
+      "name": "string",
+      "_info": {
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      }
+    },
+    "mobileGuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "_info": {
+      "additionalProp1": "string",
+      "additionalProp2": "string",
+      "additionalProp3": "string"
+    },
+    "displayVendorFlag": true,
+    "companyLocationId": 0,
+    "showRemoteFlag": true,
+    "showAutomateFlag": true,
+    "needsRenewalFlag": true,
+    "manufacturerPartNumber": "string",
+    "customFields": [
+      {
+        "id": 0,
+        "caption": "string",
+        "type": "TextArea",
+        "entryMethod": "Date",
+        "numberOfDecimals": 0,
+        "value": {}
+      }
+    ]
+  }
+]
